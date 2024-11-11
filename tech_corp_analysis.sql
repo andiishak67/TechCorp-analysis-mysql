@@ -195,7 +195,7 @@ WITH rerata_per_category AS (
 	GROUP BY category
 )
 SELECT * FROM rerata_per_category 
-	WHERE rerata_harga >+ 500;
+	WHERE rerata_harga >= 500;
 
 
 # 7. Temukan pelanggan yang telah membuat setidaknya satu pesanan dengan total jumlah lebih dari $1000!
